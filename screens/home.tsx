@@ -18,37 +18,6 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingBottom: 130,
   },
-  headerRoot: {
-    height: 250,
-    width: '100%',
-  },
-  shadow: {
-    shadowColor: '#000',
-    shadowOffset: {width: 0, height: 4},
-    shadowRadius: 4,
-    shadowOpacity: 0.4,
-  },
-  headerBg: {
-    flex: 1,
-    alignItems: 'center',
-  },
-  headerBar: {
-    width: '100%',
-    alignItems: 'flex-end',
-  },
-  notifyStyle: {
-    width: 35,
-    height: 35,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  notifyImg: {
-    flex: 1,
-  },
-  balanceSection: {
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
 });
 
 export default Home;

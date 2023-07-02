@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import React from 'react';
 
+import i18n from '../../i18n';
 import {icons, images} from '../../constants';
 import {colors, fonts, sizes} from '../../theme';
 import TrendingView from './trending-view';
@@ -41,7 +42,7 @@ const Header = () => {
               color: colors.white,
               ...fonts.h3,
             }}>
-            Your Portfolio Balance
+            {i18n.Header_Balance_Text}
           </Text>
           <Text
             style={{
@@ -49,14 +50,14 @@ const Header = () => {
               color: colors.white,
               ...fonts.h1,
             }}>
-            $12,724.33
+            {i18n.Header_Balance}
           </Text>
           <Text
             style={{
               color: colors.white,
               ...fonts.body5,
             }}>
-            +2.36% Last 24 hours
+            {i18n.Header_Message_Text}
           </Text>
         </View>
         <TrendingView />
