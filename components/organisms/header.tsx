@@ -42,7 +42,7 @@ const Header = () => {
               color: colors.white,
               ...fonts.h3,
             }}>
-            {i18n.Header_Balance_Text}
+            {i18n.HeaderBalanceText}
           </Text>
           <Text
             style={{
@@ -50,14 +50,14 @@ const Header = () => {
               color: colors.white,
               ...fonts.h1,
             }}>
-            {i18n.Header_Balance}
+            {i18n.HeaderBalance}
           </Text>
           <Text
             style={{
               color: colors.white,
               ...fonts.body5,
             }}>
-            {i18n.Header_Message_Text}
+            {i18n.HeaderMessageText}
           </Text>
         </View>
         <TrendingView />
@@ -86,8 +86,8 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   notifyStyle: {
-    width: 35,
-    height: 35,
+    width: 32,
+    height: 32,
     alignItems: 'center',
     justifyContent: 'center',
   },

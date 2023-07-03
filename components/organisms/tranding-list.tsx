@@ -1,25 +1,18 @@
-import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import type {ImageSourcePropType} from 'react-native';
 import React from 'react';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import type {NavigationProp} from '@react-navigation/native';
 
+import {TrendingListProps} from '../../types/global';
 import {colors, sizes, fonts} from '../../theme';
-
-interface TrandingListProps {
-  id: string;
-  currency: string;
-  image: ImageSourcePropType;
-  symbol: string;
-  amount: string;
-  changes: string;
-  type: string;
-}
 
 const TrandingList = ({
   item,
   index,
+  navigation,
 }: {
-  item: TrandingListProps;
+  item: TrendingListProps;
   index: number;
+  navigation: NavigationProp<any, any>;
 }) => {
   return (
     <TouchableOpacity
@@ -32,7 +25,12 @@ const TrandingList = ({
           marginRight: sizes.radius,
           backgroundColor: colors.white,
         },
-      ]}>
+      ]}
+      onPress={() =>
+        navigation.navigate('CryptoDetails', {
+          cryptoData: item,
+        })
+      }>
       <View style={styles.currencyStyle}>
         <View>
           <Image

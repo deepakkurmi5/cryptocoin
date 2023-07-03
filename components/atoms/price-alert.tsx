@@ -4,14 +4,15 @@ import React from 'react';
 import {icons} from '../../constants';
 import {colors, sizes, fonts} from '../../theme';
 import i18n from '../../i18n';
+import {utilsStyles} from '../../styles';
 
 export default function PriceAlert() {
   return (
     <TouchableOpacity style={styles.priceAlertStyle}>
       <Image source={icons.alertNotifyIcon} style={styles.notifyIconStyle} />
       <View style={styles.priceAlertDetails}>
-        <Text style={{...fonts.h3}}>{i18n.Alert_Tiltle}</Text>
-        <Text style={{...fonts.body4}}>{i18n.Alert_Decription}</Text>
+        <Text style={{...fonts.h3}}>{i18n.AlertTitle}</Text>
+        <Text style={{...fonts.body4}}>{i18n.AlertDecription}</Text>
       </View>
       <Image source={icons.rightaArrowIcon} style={styles.arrowIconStyle} />
     </TouchableOpacity>
@@ -28,14 +29,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: sizes.padding - 10,
     backgroundColor: colors.white,
     borderRadius: sizes.radius,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.3,
-    shadowRadius: 4.6,
-    elevation: 8,
+    ...utilsStyles.baseShadow,
   },
   notifyIconStyle: {
     width: 30,

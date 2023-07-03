@@ -9,5 +9,3 @@ export const colors = {
   lightGray: '#dbdbdb',
   lightGrayHelper: '#f5f6fa',
 };
-
-export default colors;

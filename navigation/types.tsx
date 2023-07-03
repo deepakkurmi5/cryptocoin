@@ -5,9 +5,11 @@ import {
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {BottomTabScreenProps} from '@react-navigation/bottom-tabs';
 
+import {TrendingListProps} from '../types/global';
+
 export type RootStackParamList = {
   HomeScreen: NavigatorScreenParams<HomeTabParamsList>;
-  CryptoDetails: undefined;
+  CryptoDetails: {cryptoData: TrendingListProps};
   Transations: undefined;
 };
 

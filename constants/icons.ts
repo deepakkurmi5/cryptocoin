@@ -6,6 +6,8 @@ const transitionIcon = require('../assets/icons/transition.png');
 const notificationIcon = require('../assets/icons/notification.png');
 const alertNotifyIcon = require('../assets/icons/alert-notify.png');
 const rightaArrowIcon = require('../assets/icons/right-arrow.png');
+const backArrowIcon = require('../assets/icons/back-arrow.png');
+const starIcon = require('../assets/icons/star-icon.png');
 
 export const icons = {
   homeIcon,
@@ -16,4 +18,6 @@ export const icons = {
   notificationIcon,
   alertNotifyIcon,
   rightaArrowIcon,
+  backArrowIcon,
+  starIcon,
 };

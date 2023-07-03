@@ -25,8 +25,3 @@ export const fonts = {
   body4: {fontFamily: 'Roboto-Regular', fontSize: sizes.body4, lineHeight: 22},
   body5: {fontFamily: 'Roboto-Regular', fontSize: sizes.body5, lineHeight: 20},
 };
-
-export default {
-  fonts,
-  sizes,
-};
