@@ -76,7 +76,7 @@ export const material: VictoryThemeDefinition = {
         axis: {
           fill: 'transparent',
           stroke: blueGrey300,
-          strokeWidth: 2,
+          strokeWidth: 0,
           strokeLinecap,
           strokeLinejoin,
         },

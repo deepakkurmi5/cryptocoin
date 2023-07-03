@@ -230,3 +230,26 @@ export const TransactionHistoryApi = [
     date: '14:20 12 Apr',
   },
 ];
+
+export const ChartOptions = [
+  {
+    id: 1,
+    label: '1 Hr',
+  },
+  {
+    id: 2,
+    label: '3 Days',
+  },
+  {
+    id: 3,
+    label: '1 Week',
+  },
+  {
+    id: 4,
+    label: '1 Month',
+  },
+  {
+    id: 5,
+    label: '3 Month',
+  },
+];
