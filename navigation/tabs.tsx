@@ -7,7 +7,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import {HomeTabParamsList} from './types';
 import Home from '../screens/home';
 import Portfolio from '../screens/portfolio';
-import Transaction from '../screens/transaction';
+import Transactions from '../screens/transactions';
 import Prices from '../screens/prices';
 import Settings from '../screens/settings';
 
@@ -90,8 +90,8 @@ const Tabs = () => {
         }}
       />
       <Tab.Screen
-        name="Transaction"
-        component={Transaction}
+        name="Transactions"
+        component={Transactions}
         options={{
           tabBarIcon: () => (
             <Image

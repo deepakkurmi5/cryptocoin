@@ -1,14 +1,19 @@
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
+import type {StyleProp, TextStyle} from 'react-native';
 
 import {icons} from '../../constants';
 import {colors, sizes, fonts} from '../../theme';
 import i18n from '../../i18n';
 import {utilsStyles} from '../../styles';
 
-export default function PriceAlert() {
+export default function PriceAlert({
+  customContainerStyle,
+}: {
+  customContainerStyle?: StyleProp<TextStyle>;
+}) {
   return (
-    <TouchableOpacity style={styles.priceAlertStyle}>
+    <TouchableOpacity style={[styles.priceAlertStyle, customContainerStyle]}>
       <Image source={icons.alertNotifyIcon} style={styles.notifyIconStyle} />
       <View style={styles.priceAlertDetails}>
         <Text style={{...fonts.h3}}>{i18n.AlertTitle}</Text>

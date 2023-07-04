@@ -10,9 +10,9 @@ export default function TextButton({
   onPress,
 }: {
   lable: string;
-  customContainerStyle: StyleProp<TextStyle>;
-  customLableStyle: any;
-  onPress: () => void;
+  customContainerStyle?: StyleProp<TextStyle>;
+  customLableStyle?: any;
+  onPress?: () => void;
 }) {
   return (
     <TouchableOpacity

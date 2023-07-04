@@ -17,7 +17,7 @@ export const Root = () => {
       initialRouteName="HomeScreen">
       <Stack.Screen name="HomeScreen" component={Tabs} />
       <Stack.Screen name="CryptoDetails" component={CryptoDetails} />
-      <Stack.Screen name="Transations" component={Transaction} />
+      <Stack.Screen name="Transation" component={Transaction} />
     </Stack.Navigator>
   );
 };

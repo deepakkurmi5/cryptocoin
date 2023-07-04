@@ -1,5 +1,6 @@
 import {FlatList, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import type {StyleProp, TextStyle} from 'react-native';
 
 import {TransactionHistoryApi} from '../../data';
 import {colors, sizes, fonts} from '../../theme';
@@ -7,9 +8,13 @@ import {utilsStyles} from '../../styles';
 import i18n from '../../i18n';
 import TransactionHistoryList from './transaction-history-list';
 
-export default function TransactionHistory() {
+export default function TransactionHistory({
+  customContainerStyle,
+}: {
+  customContainerStyle?: StyleProp<TextStyle>;
+}) {
   return (
-    <View style={styles.TransactionHistoryStyle}>
+    <View style={[styles.TransactionHistoryStyle, customContainerStyle]}>
       <Text style={{...fonts.h2}}>{i18n.TransactionHistoryTitle}</Text>
       <FlatList
         scrollEnabled={false}

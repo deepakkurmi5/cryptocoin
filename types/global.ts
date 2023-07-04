@@ -9,4 +9,6 @@ export interface TrendingListProps {
   changes: string;
   type: string;
   chartData: {x: number; y: number}[];
+  wallet: {value: string; crypto: string};
+  description: string;
 }
