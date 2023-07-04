@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: sizes.radius,
-    backgroundColor: colors.green,
+    backgroundColor: colors.secondary,
   },
 });
