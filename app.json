@@ -1,4 +1,6 @@
 {
   "name": "cryptocoin",
-  "displayName": "cryptocoin"
+  "slug": "cryptocoin",
+  "displayName": "cryptocoin",
+  "version": "1.0.0"
 }

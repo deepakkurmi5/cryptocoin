@@ -9,7 +9,7 @@ export default function TextButton({
   customLableStyle,
   onPress,
 }: {
-  lable: string;
+  lable?: string;
   customContainerStyle?: StyleProp<TextStyle>;
   customLableStyle?: any;
   onPress?: () => void;
@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: sizes.radius,
-    backgroundColor: colors.secondary,
+    backgroundColor: colors.green,
   },
 });
